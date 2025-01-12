@@ -1,5 +1,8 @@
 package csd230.lab1.pojos;
 
+/**
+ * DTO for {@link csd230.lab1.entities.Ticket}
+ */
 public class Ticket extends CartItem {
     private String text;
     public Ticket() {

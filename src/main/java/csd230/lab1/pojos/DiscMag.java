@@ -3,6 +3,9 @@ package csd230.lab1.pojos;
 import java.util.Date;
 import java.util.Objects;
 
+/**
+ * DTO for {@link csd230.lab1.entities.DiscMag}
+ */
 public class DiscMag extends Magazine {
 
     private boolean hasDisc;
