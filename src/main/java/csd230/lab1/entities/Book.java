@@ -9,7 +9,16 @@ public class Book extends Publication {
     private String author;
 
     @Column(name = "isbn")
-    private String ISBN;
+    private String isbn;
+
+    public Book() {
+    }
+
+    public Book(double price, int quantity, String description, String title, int copies, String author, String ISBN) {
+        super(price, quantity, description, title, copies);
+        this.author = author;
+        this.isbn = ISBN;
+    }
 
     public String getAuthor() {
         return author;
@@ -19,12 +28,12 @@ public class Book extends Publication {
         this.author = author;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
 }

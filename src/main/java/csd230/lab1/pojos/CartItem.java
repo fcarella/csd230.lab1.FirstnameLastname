@@ -5,7 +5,7 @@ import java.util.Objects;
 
 
 /**
- * DTO for {@link csd230.lab1.entities.CartItem}
+ * DTO for {@link csd230.lab1.entities.old.CartItem}
  */
 public abstract class CartItem implements Serializable, SaleableItem {
     private double price;

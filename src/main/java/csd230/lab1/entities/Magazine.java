@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Entity
 public class Magazine extends Publication {
-    @Column(name = "order_qty", nullable = false)
+    @Column(name = "order_qty", nullable = true)
     private int orderQty;
 
     @Column(name = "curr_issue")
@@ -29,4 +29,12 @@ public class Magazine extends Publication {
         this.currIssue = currIssue;
     }
 
+    public Magazine() {
+    }
+
+    public Magazine(double price, int quantity, String description, String title, int copies, int orderQty, Date currIssue) {
+        super(price, quantity, description, title, copies);
+        this.orderQty = orderQty;
+        this.currIssue = currIssue;
+    }
 }

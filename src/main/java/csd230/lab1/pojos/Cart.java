@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * DTO for {@link csd230.lab1.entities.Cart}
+ * DTO for {@link csd230.lab1.entities.old.Cart}
  */
 public class Cart {
     private List<CartItem> items;

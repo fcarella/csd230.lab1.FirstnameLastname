@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * DTO for {@link csd230.lab1.entities.DiscMag}
+ * DTO for {@link csd230.lab1.entities.old.DiscMag}
  */
 public class DiscMag extends Magazine {
 

@@ -4,8 +4,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 @Entity
-public class DiscMag extends Magazine {
-    @Column(name = "has_disc", nullable = false)
+public class DiscMag extends Publication {
+    @Column(name = "has_disc", nullable = true)
     private boolean hasDisc;
 
     public boolean getHasDisc() {
@@ -16,4 +16,11 @@ public class DiscMag extends Magazine {
         this.hasDisc = hasDisc;
     }
 
+    public DiscMag() {
+        hasDisc=false;
+    }
+
+    public DiscMag(boolean hasDisc) {
+        this.hasDisc = hasDisc;
+    }
 }

@@ -5,11 +5,16 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Ticket extends CartItem {
+    public Ticket() {
+    }
+
+    public Ticket(double price, int quantity, String description, String text) {
+        super(price, quantity, description);
+        this.text = text;
+    }
+
     @Column(name = "text")
     private String text;
-
-    @Column(name = "price", nullable = false)
-    private double price;
 
     public String getText() {
         return text;
@@ -17,14 +22,6 @@ public class Ticket extends CartItem {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
 }

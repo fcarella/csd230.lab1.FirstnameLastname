@@ -10,10 +10,11 @@ public class CartItem {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "price", nullable = false)
+
+    @Column(name = "price", nullable = true)
     private double price;
 
-    @Column(name = "quantity", nullable = false)
+    @Column(name = "quantity", nullable = true)
     private int quantity;
 
     @Column(name = "description")
@@ -22,6 +23,15 @@ public class CartItem {
     @ManyToOne
     @JoinColumn(name = "cart_id")
     private Cart cart;
+
+    public CartItem() {
+    }
+
+    public CartItem(double price, int quantity, String description) {
+        this.price = price;
+        this.quantity = quantity;
+        this.description = description;
+    }
 
     public Long getId() {
         return id;

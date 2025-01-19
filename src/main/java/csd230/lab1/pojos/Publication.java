@@ -3,7 +3,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 /**
- * DTO for {@link csd230.lab1.entities.Publication}
+ * DTO for {@link csd230.lab1.entities.old.Publication}
  */
 public abstract class Publication extends CartItem implements Serializable {
     private String title;
